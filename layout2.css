@@ -3,12 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
+.sidebar{
     background-color: rgba(51, 72, 73, 0.6);
     width: 150px;
     padding: 0 0 10px 10px;
     -webkit-backdrop-filter: blur(6px);
     border-radius: 0 7px 7px 0;
+    display: none;
 }
 header ul li a{
     color: aliceblue;
@@ -26,6 +27,9 @@ header ul li a{
 .logoImg a img{
     width: 80px;
 }
+.sec1{
+    border: 10px;
+}
 .sec1 ul{
     flex-direction: column;
     justify-content: space-evenly;
@@ -35,11 +39,9 @@ ul li{
     padding-left: 10px;
 }
 .sec1 ul li a{
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-evenly;
-    font-size: 20px;
+    font-size: 24px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 ul input{
     margin-top: 20px;
@@ -52,7 +54,7 @@ h1{
 }
 .sec2{
     flex-shrink: 1.5;
-    padding: 30px;
+    padding: 30px 30px 30px 0;
 }
 
 .sec2Para{
@@ -68,7 +70,7 @@ h1{
     padding-left: 50px;
 }
 .art-mid-btm{
-    padding: 5px 0 0 5px
+    padding: 5px 0 0 5px;
     width: 100%;
 }
 .art-mid-btm p{
@@ -113,6 +115,9 @@ h1{
         display: flex;
         flex-direction: column;
     }
+    .sec2{
+        padding: 30px;
+    }
     .art-mid{
         display: flex;
         flex-direction: column;
@@ -122,6 +127,10 @@ h1{
     }
     header{
         position: absolute;
+    }
+    header ul li a{
+        text-decoration: none;
+        font-size: 20px;
     }
     .logoImg{
         width: 100%;
