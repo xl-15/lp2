@@ -7,6 +7,7 @@
     background-color: rgba(51, 72, 73, 0.6);
     width: 150px;
     padding: 0 0 10px 10px;
+    margin-top: 90px;
     -webkit-backdrop-filter: blur(6px);
     border-radius: 0 7px 7px 0;
     display: none;
@@ -16,31 +17,40 @@ header ul li a{
 }
 .contar{
     display: flex;
-}
-.sec1{
-    width: 40%;
+    padding-top: 70px;
 }
 .logoImg{
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 3px;
 }
 .logoImg a img{
     width: 80px;
 }
 .sec1{
-    border: 10px;
+    width: 100%;
+    border-top: solid black;
+    border-bottom: solid black;
+    margin-top: 50px;
+    position: fixed;
+    background-color:  rgba(51, 72, 73, 0.6);
+    -webkit-backdrop-filter: blur(8px);
 }
 .sec1 ul{
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
 }
-ul li{
-    padding-top: 25px;
-    padding-left: 10px;
+.sec1 ul li{
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 3px 10px 3px 10px;
 }
 .sec1 ul li a{
-    font-size: 24px;
-    color: rgb(0, 0, 0);
+    font-size: 19px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 ul input{
@@ -54,7 +64,7 @@ h1{
 }
 .sec2{
     flex-shrink: 1.5;
-    padding: 30px 30px 30px 0;
+    padding: 30px 30px 30px 30px;
 }
 
 .sec2Para{
@@ -105,6 +115,10 @@ h1{
     padding-bottom: 30px;
 }
 
+footer section ul{
+    display: flex;
+}
+
 
 @media(max-width: 800px){
     .hideOnMobile{
@@ -128,9 +142,13 @@ h1{
     header{
         position: absolute;
     }
+    header ul li{
+        list-style: none;
+    }
     header ul li a{
         text-decoration: none;
         font-size: 20px;
+
     }
     .logoImg{
         width: 100%;
