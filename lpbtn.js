@@ -32,8 +32,6 @@ function closeSearchTab(){
 
     const searchIcon = document.querySelector('.searchIcon')
     searchIcon.style.display = 'flex'
-
-
-
     
 }
+
